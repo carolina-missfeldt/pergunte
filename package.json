@@ -1,0 +1,27 @@
+{
+  "name": "pergunte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolina-missfeldt/pergunte.git"
+  },
+  "author": "Carolina Missfeldt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolina-missfeldt/pergunte/issues"
+  },
+  "homepage": "https://github.com/carolina-missfeldt/pergunte#readme",
+  "devDependencies": {
+    "browser-sync": "^2.9.8",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
