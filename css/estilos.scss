@@ -276,6 +276,7 @@ footer {
 	position: relative;
 	overflow-y: hidden;
 
+
 }
 
 section {
@@ -288,6 +289,7 @@ section {
 		}
 
 	form {
+
 
 		padding: 7em 1em 2em 1em;
 		box-sizing: border-box;
@@ -346,6 +348,7 @@ section {
 .login {
 	form{
 		@media #{$mq-mobile}  {
+
 			padding: 2em 1em 5em 1em;
 			
 		}
@@ -354,6 +357,7 @@ section {
 	h1 {
 		@media #{$mq-mobile}  {
 			padding-top: 0;
+
 			
 		}
 	}
