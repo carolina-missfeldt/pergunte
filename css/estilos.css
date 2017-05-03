@@ -277,9 +277,6 @@ section {
   text-shadow: 2px 2px 2px #000;
   transform: rotate(-25deg); }
 
-  .voltar:hover {
-    background-color: rgba(0, 128, 0, 0.7); }
-
 
 .clear {
   clear: both; }
