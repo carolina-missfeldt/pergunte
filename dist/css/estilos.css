@@ -198,11 +198,12 @@ footer {
 
 /*cadastro/entrar*/
 .content2 {
-  background-image: url(../img/bg-cadastro.jpg);
-  background-repeat: repeat-x;
+  background-image: url(../img/bg-footer.jpg);
+  background-repeat: repeat-y;
   background-size: contain;
-  background-position: bottom;
-  position: relative; }
+  background-position: static;
+  position: relative;
+  overflow-y: hidden; }
 
 section {
   width: 50%;
@@ -212,7 +213,7 @@ section {
       width: 100%;
       display: block; } }
   section form {
-    padding: 8em 1em 2em 1em;
+    padding: 7em 1em 2em 1em;
     box-sizing: border-box;
     min-height: 100%; }
     section form label, section form input {
@@ -250,7 +251,11 @@ section {
 
 @media (max-width: 980px) {
   .login form {
-    padding: 3em 1em 5em 1em; } }
+    padding: 2em 1em 5em 1em; } }
+
+@media (max-width: 980px) {
+  .login h1 {
+    padding-top: 0; } }
 
 #login {
   background: #025ee4; }
@@ -259,15 +264,15 @@ section {
 
 .voltar {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 1em;
-  border: 1px solid #000;
-  margin: 0 10px 10px 0;
-  background-color: green;
-  box-shadow: 2px 2px 2px #000; }
-  .voltar:hover {
-    background-color: rgba(0, 128, 0, 0.7); }
+  left: 0;
+  top: 0;
+  padding: 1.5em 0.5em;
+  padding-left: 0;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #2d00f6;
+  text-shadow: 2px 2px 2px #000;
+  transform: rotate(-25deg); }
 
 .clear {
   clear: both; }
