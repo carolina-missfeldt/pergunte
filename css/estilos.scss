@@ -1,0 +1,387 @@
+//reset
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+//var e mixins
+$mq-mobile: "(max-width: 980px)";
+$font-color1: rgb(3,20,36);
+$font-color2: rgb(48,65,93);
+$font1: 'Montserrat', sans-serif;
+$pensilPosition: left 32px;
+
+
+
+/*index*/
+
+body {
+	width: 100%;
+	font-family: $font1;
+}
+
+header {
+	// position: relative;
+	// background: repeating-linear-gradient(
+	// 	45deg,
+	// 	#CFD5E2,
+	// 	#CFD5E2 15px,
+	// 	#637EA3 15px,
+	// 	#CFD5E2 20px
+	// 	);
+	background-image: url(../img/bg-teste.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	// background-attachment: fixed;
+	background-size: cover;
+	padding: 24% 10%;
+	height: 100%;
+	@media #{$mq-mobile}  {
+		background-size: 150%;
+			
+	}
+
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	box-sizing: border-box;
+
+	a {
+	
+		width: 50%;
+		float: left;
+		font-weight: 600;
+		text-align: center;
+		box-sizing: border-box;
+		padding: .7em 0;	
+		font-size: 1.5em;
+
+	}
+
+	.cadastrar {
+		background: rgba(255,0,0,1);
+		&:hover{background: rgba(255,0,0,.7);}
+	}
+
+	.entrar {
+		background:rgba(2,94,228,1);
+		&:hover{background:rgba(2,94,228,.7);}
+	}
+}
+
+/*content*/
+
+.content {
+	width: 100%;
+	padding-bottom: 0;
+	// padding: 1em 0 1em 0;
+
+	#descricao {
+		font-size: 1em;
+		padding: .7em;
+		background-color: rgb(0,128,0);
+		@media #{$mq-mobile}  {
+		font-size: .7em;
+			
+		}
+
+	}
+
+	h2 {
+		padding-top: 40px;
+		text-align: center;
+		font-size: 2.5em;
+		font-weight: 600;
+		color: #ff0000;
+		border-bottom: 2px solid rgba(0,0,0,.5);
+		text-shadow: 0 1px 2px #000;
+	}
+}
+
+.section-menu {
+	overflow: hidden;
+	a {
+		width: 100%;
+		display: inline-block;
+		padding: 2em 3em 0 3em;
+		background-repeat: no-repeat;
+		background-position: $pensilPosition;
+		background-size: 70px;
+		font-size: 2em;
+		@media #{$mq-mobile}  {
+			padding: 2em 2em 0 2em;
+			background-size: 50px;
+			background-position: left bottom;
+			
+		}
+
+	}
+}
+
+#matematica {
+	background-image: url(../img/1.png);
+	border-bottom: 2px solid rgb(157,7,195);
+	color: rgb(157,7,195);
+	&:hover {
+		background-color: rgba(157,7,195,.5);
+	}
+}
+
+#portugues {
+	background-image: url(../img/2.png);
+	border-bottom: 2px solid rgb(248,170,55);
+	color: rgb(248,170,55);
+	&:hover {
+		background-color: rgba(248,170,55,.5);
+	}
+}
+
+#ciencias {
+	background-image: url(../img/3.png);
+	border-bottom: 2px solid rgb(248,56,56);
+	color: rgb(248,56,56);
+	&:hover {
+		background-color: rgba(248,56,56,.5);
+	}
+}
+
+#historia {
+	background-image: url(../img/4.png);
+	border-bottom: 2px solid rgb(248,56,171);
+	color: rgb(248,56,171);
+	&:hover {
+		background-color: rgba(248,56,171,.5);
+	}
+}
+
+#geografia {
+		background-image: url(../img/5.png);
+	border-bottom: 2px solid rgb(45,7,195);
+	color:rgb(45,7,195);
+	&:hover {
+		background-color: rgba(45,7,195,.5);
+	}
+}
+
+#ingles {
+		background-image: url(../img/6.png);
+	border-bottom: 2px solid rgb(157,195,7);
+	color: rgb(157,195,7);
+	&:hover {
+		background-color: rgba(157,195,7,.5);
+	}
+}
+
+#espanhol {
+		background-image: url(../img/7.png);
+	border-bottom: 2px solid rgb(94,248,56);
+	color: rgb(94,248,56);
+	&:hover {
+		background-color: rgba(94,248,56,.5);
+	}
+}
+
+#artes {
+		background-image: url(../img/8.png);
+	border-bottom: 2px solid rgb(94,56,248);
+	color: rgb(94,56,248);
+	&:hover {
+		background-color: rgba(94,56,248,.5);
+	}
+}
+
+
+/*footer*/
+
+footer {
+	background-image: url(../img/bg-footer.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	height: auto;
+	font-family: $font1;
+
+	p {
+		font-weight: 200;
+		font-size: 12px;
+		padding-top: 50px;
+		text-align: center;
+	}
+
+}
+
+/*cadastro/entrar*/
+.content2 {
+	 // display:flex;
+	background-image: url(../img/bg-footer.jpg);
+	background-repeat: repeat-y;
+	background-size: contain;
+	background-position: static;
+	position: relative;
+	overflow-y: hidden;
+
+}
+
+section {
+	width: 50%;
+	float: left;
+	@media #{$mq-mobile}  {
+		width: 100%;
+		display: block;
+			
+		}
+
+	form {
+
+		padding: 7em 1em 2em 1em;
+		box-sizing: border-box;
+		min-height: 100%;
+		label, input {
+			// display: inline-block;
+			width: 100%;
+			
+			box-sizing: border-box;
+			margin-top: 5px;
+			
+
+		}
+
+		input {
+			margin-bottom: 25px;
+			padding: 0.5em;
+			border: none;
+			box-shadow: 2px 2px 2px #000;
+		}
+
+		h1 {
+			font-size: 200%;
+			font-weight: 600;
+			color: #fff;
+			text-align: center;
+			text-shadow: 2px 2px 2px #000;
+			padding: 1em;
+
+		}
+
+		label {
+			font-size: 1em;
+			color: #fff;
+			text-shadow: 2px 2px 2px #000;
+		}
+
+		button {
+			width: 100%;
+			padding: .4em;
+			box-shadow: 2px 2px 2px #000;
+			font-size: 1em;
+			font-weight: 600;
+			border: none;
+		}
+
+	}
+}
+
+#enviar {
+	background: rgba(255,0,0,1);
+	&:hover{background: rgba(255,0,0,.7);}
+
+}
+
+.login {
+	form{
+		@media #{$mq-mobile}  {
+			padding: 2em 1em 5em 1em;
+			
+		}
+	}
+
+	h1 {
+		@media #{$mq-mobile}  {
+			padding-top: 0;
+			
+		}
+	}
+}
+
+#login {
+	background:rgba(2,94,228,1);
+	&:hover{background:rgba(2,94,228,.7);}
+
+}
+
+.voltar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 1.5em 0.5em;
+	padding-left: 0;
+	font-size: 2.5em;
+	font-weight: 900;
+	color: rgb(45,0,246);
+	text-shadow: 2px 2px 2px #000;
+	transform: rotate(-25deg);
+
+}
+
+
+
+
+.clear {
+clear: both;
+}
