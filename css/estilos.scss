@@ -276,7 +276,6 @@ footer {
 	position: relative;
 	overflow-y: hidden;
 
-}
 
 section {
 	width: 50%;
@@ -346,6 +345,7 @@ section {
 .login {
 	form{
 		@media #{$mq-mobile}  {
+
 			padding: 2em 1em 5em 1em;
 			
 		}
