@@ -251,6 +251,7 @@ section {
 
 @media (max-width: 980px) {
   .login form {
+
     padding: 2em 1em 5em 1em; } }
 
 @media (max-width: 980px) {
@@ -264,6 +265,7 @@ section {
 
 .voltar {
   position: absolute;
+
   left: 0;
   top: 0;
   padding: 1.5em 0.5em;

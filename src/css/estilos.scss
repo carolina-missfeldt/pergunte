@@ -30,7 +30,7 @@ body {
 ol, ul {
 	list-style: none;
 }
-/* tables still need 'cellspacing="0"' in the markup */
+
 table {
 	border-collapse: separate;
 	border-spacing: 0;
@@ -72,15 +72,7 @@ body {
 	font-family: $font1;
 }
 
-header {
-	// position: relative;
-	// background: repeating-linear-gradient(
-	// 	45deg,
-	// 	#CFD5E2,
-	// 	#CFD5E2 15px,
-	// 	#637EA3 15px,
-	// 	#CFD5E2 20px
-	// 	);
+.index-header {
 	background-image: url(../img/bg-teste.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -379,7 +371,15 @@ section {
 
 }
 
+/* página logado*/
 
+.logado-header {
+	padding: .5em;
+		background-image: url(../img/bg-footer.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
 
 
 .clear {
