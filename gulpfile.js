@@ -22,7 +22,7 @@ const gulp = require('gulp')
 // });
 
 gulp.task('default', ['copy'], function() {
-    gulp.start('sass');
+    
 });
 
 gulp.task('copy', ['clear'], function() {
