@@ -386,9 +386,10 @@ section {
 	height: auto;
 	margin: 1em;
 	padding: 0.5em;
-	box-sizing: border-box;
+	
 	@media #{$mq-mobile}  {
 		width: 100%;
+		box-sizing: border-box;
 			
 		}
 }

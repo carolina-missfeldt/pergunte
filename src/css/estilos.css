@@ -286,11 +286,11 @@ section {
   width: 70%;
   height: auto;
   margin: 1em;
-  padding: 0.5em;
-  box-sizing: border-box; }
+  padding: 0.5em; }
   @media (max-width: 980px) {
     .left-content {
-      width: 100%; } }
+      width: 100%;
+      box-sizing: border-box; } }
 
 .clear {
   clear: both; }
