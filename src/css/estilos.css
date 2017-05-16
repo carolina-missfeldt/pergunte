@@ -282,5 +282,11 @@ section {
   background-position: center;
   background-size: 100% 100%; }
 
+.left-content {
+  width: 70%;
+  height: auto;
+  margin: 1em;
+  padding: 0.5em; }
+
 .clear {
   clear: both; }
