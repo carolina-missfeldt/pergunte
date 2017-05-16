@@ -374,8 +374,8 @@ section {
 /* página logado*/
 
 .logado-header {
-	padding: .5em;
-		background-image: url(../img/bg-footer.jpg);
+	padding: 1.5em;
+	background-image: url(../img/bg-footer.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
@@ -386,6 +386,7 @@ section {
 	height: auto;
 	margin: 1em;
 	padding: 0.5em;
+	box-sizing: border-box;
 }
 
 .clear {
