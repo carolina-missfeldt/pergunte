@@ -3,17 +3,19 @@
 const gulp = require('gulp')
 ,imagemin = require('gulp-imagemin')
 ,clean = require('gulp-clean')
+,sass = require('gulp-sass')
 // ,concat = require('gulp-concat')
 // ,htmlReplace = require('gulp-html-replace')
 // ,uglify = require('gulp-uglify')
 // ,usemin = require('gulp-usemin')
 // ,cssmin = require('gulp-cssmin')
-,browserSync = require('browser-sync')
+,browserSync = require('browser-sync');
  // ,jshint = require('gulp-jshint')
  // ,jshintStylish = require('jshint-stylish')
- // ,csslint = require('gulp-csslint')
+ //,reporters = require('reporters')
+ // ,csslint = require('gulp-csslint');
  // ,autoprefixer = require('gulp-autoprefixer')
- ,sass = require('gulp-sass');
+ 
 
 
 // gulp.task('default', ['copy'] () => {
@@ -81,12 +83,21 @@ gulp.task('build-img', function() {
 //     .pipe(gulp.dest('dist'));
 // });
 
+
+
 gulp.task('sass', function() {
     return gulp.src("src/css/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
 });
+
+// gulp.task('csslint', function () {
+// return gulp.src(['./**/*.scss'])
+//   .pipe(sass({
+//     onError: reporters('gulp-sass')
+//   }))
+//  }); 
 
 gulp.task('server', ['sass'], function() {
 
