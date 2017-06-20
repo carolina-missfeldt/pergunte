@@ -287,14 +287,19 @@ section {
   width: 70%;
   height: auto;
   margin: 1em;
-  padding: 0.5em;
+  padding: 2em 0.5em;
+  border: 1px solid #000;
   box-sizing: border-box; }
   @media (max-width: 980px) {
     .left-content {
       width: 100%;
       box-sizing: border-box; } }
+  .left-content form {
+    padding: 0; }
   .left-content select {
-    width: 50%; }
+    width: 48%;
+    margin-left: 0.6em;
+    display: inline-block; }
 
 .clear {
   clear: both; }
