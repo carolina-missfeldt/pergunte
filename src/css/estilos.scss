@@ -293,10 +293,11 @@ section {
 
 		}
 
-		input {
+		input, select {
 			margin-bottom: 25px;
 			padding: 0.5em;
 			border: none;
+			background-color: #fff;
 			box-shadow: 2px 2px 2px #000;
 		}
 
@@ -385,12 +386,17 @@ section {
 	height: auto;
 	margin: 1em;
 	padding: 0.5em;
+	box-sizing: border-box;
 	
 	@media #{$mq-mobile}  {
 		width: 100%;
 		box-sizing: border-box;
 			
 		}
+
+	select {
+		width: 50%;
+	}
 }
 
 .clear {

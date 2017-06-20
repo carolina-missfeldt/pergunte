@@ -220,10 +220,11 @@ section {
       width: 100%;
       box-sizing: border-box;
       margin-top: 5px; }
-    section form input {
+    section form input, section form select {
       margin-bottom: 25px;
       padding: 0.5em;
       border: none;
+      background-color: #fff;
       box-shadow: 2px 2px 2px #000; }
     section form h1 {
       font-size: 200%;
@@ -286,11 +287,14 @@ section {
   width: 70%;
   height: auto;
   margin: 1em;
-  padding: 0.5em; }
+  padding: 0.5em;
+  box-sizing: border-box; }
   @media (max-width: 980px) {
     .left-content {
       width: 100%;
       box-sizing: border-box; } }
+  .left-content select {
+    width: 50%; }
 
 .clear {
   clear: both; }
